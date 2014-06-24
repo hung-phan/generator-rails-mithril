@@ -1,28 +1,20 @@
-###* @jsx React.DOM ###
+###* @jsx m ###
 require [
-  "jquery"<% if (includeReactAddons) { %>
-  "react-with-addons"<% } else { %>
-  "react"<% } %>
-  "home/home"
-  "director"<% if (includeRest) { %>
-  "rest"<% } %><% if (includeLodash) { %>
+  "jquery"
+  "mithril"
+  "home/home"<% if (includeLodash) { %>
   "lodash"<% } %>
   "bootstrap"
-], ($, React, home) ->
-  "use strict"
+], ($, m, home) ->
   $(document).ready ->
 
-    # App Module
-    routeDOMElement = document.getElementById("route")
+    #setup routes to start w/ the `#` symbol
+    m.route.mode = "hash"
 
-    #doc for routing https://github.com/flatiron/director
-    routes =
-      "/": ->
-        React.renderComponent `<home />`, routeDOMElement
-        return
+    #routing configuration
+    m.route document.getElementById("ui-router"), "/",
+      "/": home
 
-    routerHandler = new Router(routes)
-    routerHandler.init "/"
     return
 
   return
