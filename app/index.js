@@ -72,8 +72,8 @@ var RailsMithrilGenerator = yeoman.generators.Base.extend({
       name: 'jsFile',
       message: 'What js library would you like to include?',
       choices: [
-        { name: 'Lodash.js'                , value: 'includeLodash'      , checked: true } ,
-        { name: 'Modernizr'                , value: 'includeModernizr'   , checked: true }
+        { name: 'Lodash.js' , value: 'includeLodash'    , checked: true } ,
+        { name: 'Modernizr' , value: 'includeModernizr' , checked: true }
       ]
     }];
 
@@ -82,8 +82,6 @@ var RailsMithrilGenerator = yeoman.generators.Base.extend({
 
       // JS
       this.includeLodash      = includeJS('includeLodash');
-      this.includeReactAddons = includeJS('includeReactAddons');
-      this.includeRest        = includeJS('includeRest');
       this.includeModernizr   = includeJS('includeModernizr');
       cb();
     }.bind(this));
@@ -175,7 +173,7 @@ var RailsMithrilGenerator = yeoman.generators.Base.extend({
 
     this.write(path, file);
     this.template('app/main.jsx.coffee', 'app/assets/javascripts/main.jsx.coffee');
-    this.template('app/home/home.js.jsx.coffee', 'app/assets/javascripts/home/home.js.jsx.coffee');
+    this.template('app/home/home.js.msx.coffee', 'app/assets/javascripts/home/home.js.msx.coffee');
   },
 
   routes: function() {
