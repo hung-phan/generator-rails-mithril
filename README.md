@@ -1,4 +1,4 @@
-# generator-rails-mithril [![Build Status](https://secure.travis-ci.org/hung-phan/generator-rails-mithril.png?branch=master)](https://travis-ci.org/hung-phan/generator-rails-mithril)
+# generator-rails-mithril
 
 > [Yeoman](http://yeoman.io) generator
 

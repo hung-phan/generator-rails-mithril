@@ -1,0 +1,10 @@
+# auto generate bower assets
+
+asset 'sass-bootstrap'<% if (includeLodash) { %>
+asset 'lodash'<% } %>
+asset 'jquery', '2.1.1'
+asset 'director'<% if (includeRest) { %>
+asset 'jquery.rest'<% } %>
+asset 'react'<% if (includeButtonCss) { %>
+asset 'Buttons'<% } %><% if (includeAnimateCss) { %>
+asset 'animate-sass'<% } %>
