@@ -1,4 +1,4 @@
-###* @jsx React.DOM ###
+###* @jsx m ###
 define ["mithril"], (m) ->
   "use strict"
 
