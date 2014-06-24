@@ -12,7 +12,7 @@ require [
     m.route.mode = "hash"
 
     #routing configuration
-    m.route document.getElementById("ui-router"), "/",
+    m.route document.getElementById("route"), "/",
       "/": home
 
     return
