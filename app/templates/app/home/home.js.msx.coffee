@@ -28,7 +28,8 @@ define ["mithril"], (m) ->
 
   #view
   app.view = (ctrl) ->
-    `<div class="container">
+    `
+    <div class="container">
         <div class="header">
             <ul class="nav nav-pills pull-right">
                 <li class="active"><a href="#">Home</a>
@@ -87,6 +88,7 @@ define ["mithril"], (m) ->
         <div class="footer">
             <p>♥ from the Yeoman team</p>
         </div>
-    </div> `
+    </div>
+    `
 
   app
