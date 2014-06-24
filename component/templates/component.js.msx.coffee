@@ -28,10 +28,8 @@ define ["mithril"], (m) ->
 
   #view
   <%= name %>.view = (ctrl) ->
-    `
-    <div>
+    `<div>
       This is the template for <%= name %>
-    </div>
-    `
+    </div>`
 
   <%= name %>
