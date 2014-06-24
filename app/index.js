@@ -172,7 +172,7 @@ var RailsMithrilGenerator = yeoman.generators.Base.extend({
                .replace("//= require_tree .", '//= require main');
 
     this.write(path, file);
-    this.template('app/main.jsx.coffee', 'app/assets/javascripts/main.jsx.coffee');
+    this.template('app/main.msx.coffee', 'app/assets/javascripts/main.msx.coffee');
     this.template('app/home/home.js.msx.coffee', 'app/assets/javascripts/home/home.js.msx.coffee');
   },
 
