@@ -2,6 +2,8 @@
 
 > [Yeoman](http://yeoman.io) generator
 
+[![NPM](https://nodei.co/npm/generator-rails-mithril.png?downloads=true)](https://nodei.co/npm/generator-rails-mithril/)
+
 ## Getting Started
 
 To run this version of yeoman generator. First, make sure that you have already installed yeoman
