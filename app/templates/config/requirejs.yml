@@ -6,7 +6,7 @@ paths:
   # require lodash
   'lodash': 'lodash/dist/lodash'<% } %>
   # bootstrap library
-  'bootstrap': 'sass-bootstrap/dist/js/bootstrap'
+  'bootstrap': 'bootstrap-sprockets'
 shim:
   'mithril':
     exports: 'm'<% if (includeLodash) { %>
