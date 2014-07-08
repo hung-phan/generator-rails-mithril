@@ -46,6 +46,14 @@ Other dependencies
 I define all the react components with suffix __.js.msx.coffee__ based on [mithril-rails](https://github.com/mrsweaters/mithril-rails).
 For code fragments, I like the way of require.js controlling application by module rather than defining all js file in __application.js__
 
+## Assets compile
+
+Compile your assets before deploying to production server
+
+```bash
+$ rake assets:precompile RAILS_ENV=production
+```
+
 ## Options
 
 Name: mongoid (for mongodb)
