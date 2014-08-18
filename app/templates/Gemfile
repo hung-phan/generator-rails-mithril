@@ -20,10 +20,16 @@ gem 'compass-rails'<% } %><% if (includeFontAwesome) { %>
 gem 'font-awesome-rails'<% } %><% if (includeLiveReload) { %>
 # livereload using guard server
 group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem 'meta_request'
+end
+group :development do
   gem 'guard'
   gem 'guard-livereload', require: false
 end<% } %><% if (includeGrape) { %>
 # grape api
+gem 'grape-entity'
 gem 'grape'<% } %><% if (includeRubyRacer) { %>
 # embed the V8 Javascript Interpreter into Ruby
 gem 'therubyracer', platforms: :ruby<% } %>
