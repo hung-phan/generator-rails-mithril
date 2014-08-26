@@ -5,6 +5,7 @@ require [
   "home/home"<% if (includeLodash) { %>
   "lodash"<% } %>
   "bootstrap"
+  "jquery_ujs"
 ], ($, m, home) ->
   $(document).ready ->
 
