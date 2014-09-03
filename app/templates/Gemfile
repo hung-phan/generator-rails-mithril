@@ -11,7 +11,7 @@ gem 'mongoid'<% } %>
 # rspec
 gem 'rspec'
 # mithril msx compile
-gem 'mithril_rails'
+gem 'mithril_rails', :git => 'git://github.com/hung-phan/mithril-rails.git'
 # requirejs
 gem 'requirejs-rails'<% if (includeButtonCss) { %>
 # button sass

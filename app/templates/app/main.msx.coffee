@@ -6,6 +6,7 @@ require [
   "lodash"<% } %>
   "bootstrap"
   "jquery_ujs"
+  "mithril_ujs"
 ], ($, m, home) ->
   $(document).ready ->
 
