@@ -218,6 +218,10 @@ var RailsMithrilGenerator = yeoman.generators.Base.extend({
     }
   },
 
+  rspecRails: function() {
+    shell.exec("rails generate rspec:install");
+  },
+
   defaultStylesheet: function() {
     console.log(magenta('Copy default.css.scss file'));
     this.template('app/default.css.scss', 'app/assets/stylesheets/default.css.scss');
