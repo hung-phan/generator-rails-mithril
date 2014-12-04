@@ -1,3 +1,6 @@
+modules:
+  - name: application
+  - name: mithril_ujs
 paths:
   # require mithril library
   'mithril': 'mithril/mithril'
@@ -13,7 +16,6 @@ shim:
   'jquery_ujs': ['jquery']
   'mithril':
     exports: 'm'<% if (includeLodash) { %>
-  'mithril_ujs': ['mithril']
   'lodash':
     exports: '_'<% } %>
   'bootstrap': ['jquery']

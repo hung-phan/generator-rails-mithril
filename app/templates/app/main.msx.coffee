@@ -6,8 +6,11 @@ require [
   "lodash"<% } %>
   "bootstrap"
   "jquery_ujs"
-  "mithril_ujs"
 ], ($, m, home) ->
+
+	# binding mithril component
+	require ["mithril_ujs"], (->)
+
   $(document).ready ->
 
     #setup routes to start w/ the `#` symbol
