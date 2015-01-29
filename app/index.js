@@ -188,6 +188,17 @@ var RailsMithrilGenerator = yeoman.generators.Base.extend({
     }
   },
 
+  assetsPath: function() {
+    //include config into config/initializers/assets.rb
+    var path   = 'config/initializers/assets.rb',
+        file   = this.readFileAsString(path),
+        insert = 'Rails.application.config.assets.precompile += %w( mithril_ujs.js )';
+
+    if (file.indexOf(insert) === -1) {
+      this.write(path, file + insert);
+    }
+  },
+
   guard: function() {
     //process livereload
     if (this.includeLiveReload) {

@@ -34,7 +34,7 @@ group :development do
 end
 
 # mithril msx compile
-gem 'mithril_rails', :git => 'git://github.com/hung-phan/mithril-rails.git'
+gem 'mithril_rails'
 # requirejs
 gem 'requirejs-rails'<% if (includeButtonCss) { %>
 # button sass
