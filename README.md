@@ -42,6 +42,10 @@ Other dependencies
 
 2. Compass (gem install compass)
 
+### Update development config
+Update `config.assets.digest = false` in `config/environments/development.rb` to enable compilation on the fly so
+that any asset file changes are detected by the Rails Server
+
 ## Template
 I define all the react components with suffix __.js.msx.coffee__ based on [mithril-rails](https://github.com/mrsweaters/mithril-rails).
 For code fragments, I like the way of require.js controlling application by module rather than defining all js file in __application.js__
