@@ -1,6 +1,6 @@
 {
   "name": "generator-rails-mithril",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -20,7 +20,7 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator", "mithril", "rails", "require.js"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
