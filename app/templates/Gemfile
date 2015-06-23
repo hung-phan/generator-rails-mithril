@@ -8,7 +8,6 @@ gem 'bower-rails'<% if (includeModernizr) { %>
 gem 'modernizr-rails', '~> 2.7.1'<% } %><% if (includeMongodb) { %>
 # mongoid
 gem 'mongoid'<% } %>
-
 group :development, :test do
   gem 'quiet_assets'
   gem 'faker' # https://github.com/stympy/faker
@@ -27,13 +26,14 @@ group :development, :test do
   gem 'did_you_mean'<% if (includeLiveReload) { %>
   gem 'guard-livereload', require: false <% } %>
 end
-
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
   gem 'meta_request'
 end
-
+group :test do
+  gem 'airborne' # api test
+end
 # mithril msx compile
 gem 'mithril_rails'
 # requirejs
